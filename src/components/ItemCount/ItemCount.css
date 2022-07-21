@@ -1,0 +1,15 @@
+.contador {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btnContador {
+    border-radius: 100px;
+  }
+  .enCards {
+    display: flex;
+    justify-items: center;
+    align-items: baseline;
+    justify-content: center;
+  }

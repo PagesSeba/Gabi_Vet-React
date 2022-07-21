@@ -1,0 +1,76 @@
+.footerComponent {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.footerbgcolor {
+    background-color: #ced4da;
+    box-shadow: 1px 1px 10px grey;
+}
+.inFooterPs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.positionText {
+ display: flex;
+ align-items: center;
+}
+.positionIconsGroup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.iconsFooter {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.tw {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    transition: all 1s;
+}
+.ig {
+    background-color: #DD2A7B;
+    border-color: #DD2A7B;
+    color: #fff;
+    transition: all 1s;
+}
+.wpp {
+    background-color:#25D366;
+    border-color: #25D366;
+    color: #fff;
+    transition: all 1s;
+}
+.mail {
+    background-color:#db4a39;
+    border-color: #db4a39;
+    color: #fff;
+    transition: all 1s;
+}
+.tw:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0d6efd;
+}
+.ig:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #DD2A7B;
+}
+.wpp:hover {
+    background-color:#fff;
+    border-color: #fff;
+    color: #25D366;
+}
+.mail:hover {
+    background-color:#fff;
+    border-color: #fff;
+    color: #db4a39;
+}
+.linkNV {
+    text-decoration: none;
+  } 

@@ -1,0 +1,12 @@
+
+
+.formInput {
+    margin-right: 20px;
+  }
+  .formTerms {
+   display: flex;
+   justify-content: center;
+  }
+  .btnForm {
+    margin-right: 20px;
+  }

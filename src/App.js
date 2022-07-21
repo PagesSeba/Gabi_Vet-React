@@ -1,23 +1,49 @@
-import logo from './logo.svg';
+// react
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// components
+import NavBar from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer';
+
+// pages
+import Home from './pages/Home';
+import Camisetas from './pages/Camisetas';
+import CamisetasDetalle from './pages/CamisetasDetalle';
+import Contacto from './pages/Contacto';
+import Error404 from './pages/Error404';
+import Carrito from './pages/Carrito';
+import Checkout from './pages/Checkout';
+import Nosotros from './pages/Nosotros';
+
+// context
+import {CartProvider} from './context/CartContext';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path='*' element={<Error404 />}/>
+                <Route path="/:category" element={<Camisetas />} />
+                <Route path="/:category/:id" element={<CamisetasDetalle />} />
+                <Route path="/contacto" element={<Contacto />} />
+                <Route path='/nosotros' element={<Nosotros />} />
+                <Route path="/cart" element={<Carrito />} />
+                <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
+    
     </div>
   );
 }

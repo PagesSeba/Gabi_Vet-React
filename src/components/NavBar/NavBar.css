@@ -1,0 +1,86 @@
+.headerInicio {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 25px;
+    background-color:  #1c8b73;
+    padding-right: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 1px 1px 10px grey;
+  }
+  
+  ul.navbar {
+    list-style: none;
+    display: flex;
+  }
+  
+  ul.navbar li {
+    margin-right: 25px;
+  }
+  
+  .linkNV {
+    text-decoration: none;
+  } 
+  
+  .imgHeader {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-right: 25px;
+  }
+  
+  .marca {
+    display: flex;
+    left: 30px;
+    align-items: baseline;
+  }
+  
+  .nombreMarca {
+    font-size:larger;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+  }
+  .navBtn {
+    color: #fff  !important;
+  }
+  .subMenuColor {
+    color: #1c8b73  !important;
+}
+
+@media screen and (max-width: 769px) {
+  .marca {
+    position: relative;
+  }
+  .nombreMarca {
+    display: none;
+  }
+  #container {
+    max-width: 600px; 
+}
+}
+@media screen and (max-width: 550px) {
+  .marca {
+    position: relative;
+  }
+  .nombreMarca {
+    display: none;
+  }
+  #container {
+    max-width: 270px ; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .marca {
+    position: relative;
+  }
+  .nombreMarca {
+    display: none;
+  }
+  #container {
+    max-width: 220px ; 
+  }
+}

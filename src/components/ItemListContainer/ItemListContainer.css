@@ -1,0 +1,33 @@
+.linkNV {
+    text-decoration: none;
+  } 
+  .cInicio {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sombras {
+      box-shadow: 1px 1px 5px grey;
+      border-radius: 20px;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  .negro {
+    color: black
+  }
+  .loading{
+    text-align: center;
+    margin:100px;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+  }

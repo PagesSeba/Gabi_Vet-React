@@ -1,0 +1,53 @@
+  .carti {
+    position: relative;
+    right: 140px;
+  }
+    .precios {
+    font-weight: bold;
+  }
+  .modalCarrito {
+   width: 400px;
+   gap: 60px;
+   border-bottom: 1px dotted grey;
+  }
+  .imgCarrito{
+    width: 100px;
+  }
+  .iconoCart {
+    color: #fff;
+  }
+  .desplegableCart {
+   text-align: center;
+  }
+  .Carro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px black dotted;
+    margin-bottom: 10px;
+  }
+  .imgCarro {
+    width: 200px;
+    height: auto;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dotted grey;
+  }
+  .btnCartWidget {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 550px) {
+    .carti {
+      right: 40px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .carti {
+      right: 10px;
+    }
+  }
