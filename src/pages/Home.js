@@ -2,6 +2,7 @@ import React from "react";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
 import EmblaCarousel from "../components/Carousel/js/EmblaCarousel";
 import "../components/Carousel/css/embla.css"
+import WppWidget from "../components/WppWidget/WppWidget";
 
 const SLIDE_COUNT = 4;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -10,6 +11,7 @@ const Home = () => {
     
     return(
         <div>
+            <WppWidget />
             <div>
                 <h1>Bienvenidos a FutCor!</h1>
                 <h3>Nos dedicamos a la venta de camisetas de los mejores equipos de Córdoba Capital

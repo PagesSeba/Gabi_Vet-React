@@ -1,9 +1,11 @@
 import React from "react"
 import { Container } from "@mui/material"
+import WppWidget from "../components/WppWidget/WppWidget"
 
 const Nosotros = () => {
     return(
         <Container>
+            <WppWidget />
             <h1>Sobre Nosotros</h1>
             <div>
                 <div>

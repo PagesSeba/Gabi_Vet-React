@@ -7,7 +7,7 @@ function Item(props) {
     const{img , equipo , info , precio} = props
     
     return(
-        <div className="sombras card">
+        <div className="sombras cardM">
             <img src={img} alt={img} className="casacas"></img>
             <h2>{equipo}</h2>
             <p className='small'>{info}</p>

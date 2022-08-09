@@ -13,7 +13,7 @@ function ItemList() {
             {
             camisetas.map((camiseta) => {
                 return(
-                    <div className="card" key={camiseta.id}>
+                    <div className="cardM" key={camiseta.id}>
                         <Item 
                         img={`/assets/images/${camiseta.img}`}
                         equipo={camiseta.equipo}
