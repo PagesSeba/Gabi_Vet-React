@@ -1,17 +1,12 @@
 .precios {
     font-weight: bold;
+    margin-bottom: 1.5rem;
   }
   .ItemDetailCard {
     display: flex;
-    justify-content: center;
-    margin-right: 600px;
-    margin-left: 600px;
-    box-shadow: 0px 7px 20px 0px rgb(0 0 0 / 60%);
-    border-radius: 20px;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    width: 750px;
-    height: 450px;
   }
   .mt10 {
     margin-top: 10px;
@@ -19,11 +14,75 @@
   .ItemDetailSM {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
   }
   .ItemDetailImg {
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
     border-radius: 30px;
+  }
+  .ItemDetailImgContainer {
+    width: 700px;
+  }
+  .gap-det {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .equip {
+    color: red;
+    text-align: left;
+  }
+  .container-1{
+    border-bottom: 1px grey solid;
+  }
+
+  @media screen and (max-width: 769px) {
+    .ItemDetailImg {
+      width: 400px;
+      height: 400px;
+      border-radius: 30px;
+    }
+    .ItemDetailImgContainer {
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .ItemDetailImg {
+      width: 300px;
+      height: 300px;
+      border-radius: 30px;
+    }
+    .ItemDetailImgContainer {
+      width: 300px;
+    }
+    .ItemDetailCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .equip {
+      color: red;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .ItemDetailImg {
+      width: 200px;
+      height: 200px;
+      border-radius: 30px;
+    }
+    .ItemDetailImgContainer {
+      width: 200px;
+    }
+    .ItemDetailCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .equip {
+      color: red;
+      text-align: center;
+    }
   }

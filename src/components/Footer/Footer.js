@@ -21,10 +21,10 @@ function Footer() {
 
             </div>
             <div className="inFooterPs">
-                <div className="positionText">
+                <div className="mb-2 positionText">
                     <h6 className="">© Plus Pet Córdoba</h6>
                 </div>
-                <div className="d-flex flex-column">
+                <div className="mb-2 d-flex flex-column">
                         <h6 className="">Métodos de Pago</h6>
                         <div className="positionPaymentImg">
                             <img src={logoVisa} className="imgPayment" alt="visa"></img>
@@ -32,7 +32,7 @@ function Footer() {
                             <img className="imgPayment" alt="mercadopago" src={logoMercadoPago}></img>
                         </div>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="mb-2 d-flex flex-column">
                         <h6 className="">Nuestras Redes</h6>
                         <div className="positionIconsGroup">
                             <Link to={""}  className="linkNV">

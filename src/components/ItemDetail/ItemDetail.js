@@ -26,15 +26,20 @@ function ItemDetail({item}){
     
     return(
         <div className="ItemDetailCard">
-            <div>
+            <div className="ItemDetailImgContainer">
                 <img src={`/assets/images/${img}`} className="ItemDetailImg"></img>
             </div>
             <div className="ItemDetailSM">
-                <p className="precios">Equipo: {equipo}</p>
-                <p className="precios">Información: {info}</p>
-                <p className="precios">Talle: {talle}</p>
-                <p className="precios">Detalle: {detalle}</p>
-                <p className="precios">Precio: ${precio}</p>
+                <div className="container-1">
+                <h2 className="precios">{equipo} {info}</h2>
+                <h6 className="equip">{equipo}</h6>
+                </div>
+                <div className="gap-det">
+                    <h5 className="precios">Talle: {talle}</h5>
+                    <h5 className="precios">Detalle: {detalle}</h5>
+                    <h5 className="precios">Precio: ${precio}</h5>
+                    <h5 className="precios">Stock: {stock}</h5>
+                </div>
                 { click ? (
                     <div>
                             <ItemCount stock={stock} onAdd={onAdd} initial={1}/>

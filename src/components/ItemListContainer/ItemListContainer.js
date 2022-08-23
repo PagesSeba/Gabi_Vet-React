@@ -60,7 +60,6 @@ function ItemListContainer() {
                         const { id, equipo, precio, info, img, stock, categoria } = producto;
                         if (category) {
                         return (
-                            
                             <Link className=' cardM linkNV negro' to={`./${id}`}>
                             <div key={id} className="sombras" >
                                 <Item

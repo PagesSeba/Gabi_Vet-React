@@ -37,7 +37,6 @@ function ItemDetailContainer() {
 
     return(
         <div>
-            <h2>Detalle de la Camiseta:</h2>
             <ItemDetail item={casaca}/>
         </div>
     );

@@ -1,6 +1,5 @@
 .footerComponent {
     margin-top: 5rem;
-    margin-bottom: 1rem;
 }
 .footerbgcolor {
     background-color: #ced4da;
@@ -8,6 +7,7 @@
 }
 .inFooterPs {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -85,3 +85,21 @@
     width: 45px;
     height: 30px;
 }
+
+@media screen and (max-width: 550px) {
+    .inFooterPs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .inFooterPs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
