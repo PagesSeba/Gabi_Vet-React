@@ -18,9 +18,9 @@ const Carrito = () => {
             {
                 cartProducts.length ? (
 
-                    <Container>
+                    <Container className="container">
                         <div className="carritoSection">
-                        <table className="tablaCarrito">
+                        <table className=" table tablaCarrito">
                         <thead>
                             <tr className='carritoHeader'>
                                 <th>Producto</th>
@@ -36,19 +36,19 @@ const Carrito = () => {
                         return (
                         <Container>
                             <tr className="Carro">
-                                <td>
+                                <td className="child1">
                                     <img className="imgCarro" src={`/assets/images/${product.img}`} />
                                 </td>
-                                <td>
+                                <td className="child2">
                                     <p className="precios descItemCarro">{product.equipo} {product.categoria}</p>
                                 </td>
-                                <td>
+                                <td className="child3">
                                     <p className="precios precioUnidadItemCarro">${product.precio}</p>
                                 </td>
-                                <td>
+                                <td className="child4">
                                     <p className="precios cantItemCarro">{product.cantidad}</p>
                                 </td>
-                                <td>
+                                <td className="child5">
                                     <p className="precios precioItemCarro">${product.precio*product.cantidad}</p>
                                 </td>
                                 <td className="borrarItemCarro">
@@ -75,6 +75,7 @@ const Carrito = () => {
 
                     </div>
                     </Container>
+
 
                 ) : (
                     <div className="cartVacio">
