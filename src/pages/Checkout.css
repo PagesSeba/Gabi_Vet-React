@@ -1,12 +1,17 @@
+
+.resumenCart{
+  grid-area: compras;
+}
 .formCompra {
     text-align: center;
-    width: 20%;
+    width: 50%;
     height: fit-content;
     background-color: white;
     border: 1px solid grey;
     box-shadow: 1px 1px 10px grey;
     border-radius: 50px;
     margin-top: 70px;
+    grid-area: form;
   }
   .formInt {
       display: flex;
@@ -22,7 +27,7 @@
   }
   .formCompraLista {
     text-align: center;
-    width: 30%;
+    width: 50%;
     height: 200px;
     margin: 100px auto;
     background-color: white;
@@ -50,8 +55,12 @@
     align-items: center;
   }
   .checkout {
-      display: flex;
-      justify-content: space-evenly;
+      display: grid;
+      justify-items: center;
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "form compras";
       margin-top: 40px;
   }
   .padreCheckoutItem {
@@ -77,4 +86,25 @@
     border-right: none;
     border-left: none;
     border-bottom: 2px solid #5ccfb4;
+  }
+
+  @media screen and (max-width: 768px) {
+    .checkout {
+      grid-template-areas: "compras compras" "form form" ;
+      gap: 2rem;
+    }
+    .formCompraLista {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    .formCompra {
+      width: 90%;
+    }
+    .checkout {
+      gap: 2rem;
+    }
+    .formCompraLista {
+      width: 100%;
+    }
   }

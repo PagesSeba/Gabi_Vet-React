@@ -91,38 +91,40 @@ const Checkout = () => {
             <div>
         {
                 loading ? (
-                    <div className="checkout">
-                        <div className="formCompra">
-                            <h2>Finalizar Compra</h2>
-                            <form className="formInt" onSubmit={formSubmit}>
-                                <input className="inputsCheckout" type="text" name="name" placeholder="Nombre Completo" onChange={dataUsuario} value={formData.name} required />
-                                <input className="inputsCheckout" type="number" name="phone" placeholder="Número de Telefono" onChange={dataUsuario} value={formData.phone} required />
-                                <input className="inputsCheckout" type="mail" id="email" name="email" placeholder="Correo Electrónico" onChange={dataUsuario} value={formData.email} required />
-                                <input className="inputsCheckout" type="mail" id="emailR" name="emailR" placeholder="Repita su Correo Electrónico" onChange={dataUsuario} value={formData.repeatEmail} pattern={formData.email} required />
-                                <Button type="submit" variant="contained" color="primary" className="btnForm">Enviar</Button>
-                            </form>
-                        </div>
-                        <div>
-                            
-                        <h4 className="resumenTop">Tu compra</h4>
-                        {cartProducts.map((product) => {
-                            const { id, img, equipo, categoria, precio, cantidad } = product;
-                            const total = precio * cantidad;
-                                return (
-                                    <div className="padreCheckoutItem" key={id}>
-                                        <div><img src={`/assets/images/${img}`} alt={img} className="imgCheckoutItem" /  ></div>
-                                        <div className="textCheckoutItem">
-                                            <b className="equipoC">{equipo} {categoria} </b>
-                                            <p className="detalleC">Precio Unitario ${precio}</p>
-                                            <p className="detalleC">Cantidad: {cantidad}</p>
-                                            <p className="detalleC"><p>Precio por cantidad ${total}</p></p>
+                    <div className="checkoutMain">
+                        <div className="checkout">
+                            <div className="formCompra">
+                                <h2>Finalizar Compra</h2>
+                                <form className="formInt" onSubmit={formSubmit}>
+                                    <input className="inputsCheckout" type="text" name="name" placeholder="Nombre Completo" onChange={dataUsuario} value={formData.name} required />
+                                    <input className="inputsCheckout" type="number" name="phone" placeholder="Número de Telefono" onChange={dataUsuario} value={formData.phone} required />
+                                    <input className="inputsCheckout" type="mail" id="email" name="email" placeholder="Correo Electrónico" onChange={dataUsuario} value={formData.email} required />
+                                    <input className="inputsCheckout" type="mail" id="emailR" name="emailR" placeholder="Repita su Correo Electrónico" onChange={dataUsuario} value={formData.repeatEmail} pattern={formData.email} required />
+                                    <Button type="submit" variant="contained" color="primary" className="btnForm">Enviar</Button>
+                                </form>
+                            </div>
+                            <div className="resumenCart">
+                                
+                            <h4 className="resumenTop">Tu compra</h4>
+                            {cartProducts.map((product) => {
+                                const { id, img, equipo, categoria, precio, cantidad } = product;
+                                const total = precio * cantidad;
+                                    return (
+                                        <div className="padreCheckoutItem" key={id}>
+                                            <div><img src={`/assets/images/${img}`} alt={img} className="imgCheckoutItem" /  ></div>
+                                            <div className="textCheckoutItem">
+                                                <b className="equipoC">{equipo} {categoria} </b>
+                                                <p className="detalleC">Precio Unitario ${precio}</p>
+                                                <p className="detalleC">Cantidad: {cantidad}</p>
+                                                <p className="detalleC"><p>Precio por cantidad ${total}</p></p>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            }
-                        )}
-                        
-                        <p className="resumenBottom">Total: ${totalPrice()}</p>
+                                    )
+                                }
+                            )}
+                            
+                            <p className="resumenBottom">Total: ${totalPrice()}</p>
+                        </div>
                     </div>
                 </div>
 
