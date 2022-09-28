@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import React, { useContext } from "react"
 import CartContext from "../context/CartContext"
 import { Divider, Button} from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -7,9 +7,12 @@ import { Container } from "@mui/material";
 import { IconButton } from "@mui/material";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import ShopIcon from '@mui/icons-material/Shop';
+
 import "./Carrito.css"
 
 const Carrito = () => {
+
+
     const { cartProducts, deleteProducts, totalPrice, clearCart } = useContext(CartContext)
 
     return (
@@ -64,6 +67,7 @@ const Carrito = () => {
                     })}
                     </tbody>
                     </table>
+
 
                     <Container className="pTotal">
                         <h4>Total: ${totalPrice()}</h4>

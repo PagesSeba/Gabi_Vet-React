@@ -1,0 +1,20 @@
+.boxInstrucciones {
+    border-radius: 0px 34px 0px 29px;
+    background-color:#ced4da ;
+    padding: 2rem;
+    list-style-type: none; 
+}
+
+.boxInstrucciones li {
+    color: black;
+    font-size: 1.5rem;
+    margin: 2rem;
+    border-bottom: 2px solid black;
+
+}
+.boxInstrucciones li p {
+    font-size: 1.2rem;
+    color: black;
+    text-align: justify;
+    margin: 2rem;
+}

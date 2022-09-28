@@ -57,7 +57,7 @@ function NavBar() {
                                 <Link to={"/Suplente"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Suplentes</MenuItem></Link>
                             </Menu>
                             </li>
-                <li><Link to={'/nosotros'} className="linkNV nav-item"><Button className='navBtn'>Nosotros</Button></Link></li>
+                <li><Link to={'/faqs'} className="linkNV nav-item"><Button className='navBtn'>Preguntas Frecuentes</Button></Link></li>
                 <li><Link to={'/contacto'} className="linkNV nav-item"><Button className='navBtn'>Contacto</Button></Link></li>
                 </ul>
                 </div>

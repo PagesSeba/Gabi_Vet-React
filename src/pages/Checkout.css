@@ -4,11 +4,10 @@
 }
 .formCompra {
     text-align: center;
-    width: 50%;
+    width: 70%;
     height: fit-content;
     background-color: white;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 6px grey;
     border-radius: 50px;
     margin-top: 70px;
     grid-area: form;
@@ -27,7 +26,7 @@
   }
   .formCompraLista {
     text-align: center;
-    width: 50%;
+    width: 70%;
     height: 200px;
     margin: 100px auto;
     background-color: white;
@@ -80,7 +79,7 @@
     color: red;
   }
   .inputsCheckout {
-    width: 50%;
+    width: 65%;
     height: 29px;
     border-top: none;
     border-right: none;

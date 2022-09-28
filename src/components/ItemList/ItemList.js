@@ -9,7 +9,7 @@ function ItemList() {
     const [camisetas, setCamisetas] = useState([])
 
     return (
-        <div className="cInicio">
+        <div className="">
             {
             camisetas.map((camiseta) => {
                 return(
