@@ -43,13 +43,13 @@ const Carrito = () => {
                                     <img className="imgCarro" src={`/assets/images/${product.img}`} />
                                 </td>
                                 <td className="child2">
-                                    <p className="precios descItemCarro">{product.equipo} {product.categoria}</p>
+                                    <p className="precios descItemCarro">{product.nombre} </p>
                                 </td>
                                 <td className="child3">
                                     <p className="precios precioUnidadItemCarro">${product.precio}</p>
                                 </td>
                                 <td className="child4">
-                                    <p className="precios cantItemCarro">{product.cantidad}</p>
+                                    <p className="precios cantItemCarro">{product.cantidad} x {product.peso} </p>
                                 </td>
                                 <td className="child5">
                                     <p className="precios precioItemCarro">${product.precio*product.cantidad}</p>

@@ -6,21 +6,21 @@ import "./ItemList.css"
 
 function ItemList() {
 
-    const [camisetas, setCamisetas] = useState([])
+    const [products, setProducts] = useState([])
 
     return (
         <div className="">
             {
-            camisetas.map((camiseta) => {
+            products.map((product) => {
                 return(
-                    <div className="cardM" key={camiseta.id}>
+                    <div className="cardM" key={product.id}>
                         <Item 
-                        img={`/assets/images/${camiseta.img}`}
-                        equipo={camiseta.equipo}
-                        info={camiseta.info}
-                        precio={camiseta.precio}
-                        id={camiseta.id}
-                        stock={camiseta.stock}
+                        img={`/assets/images/${product.img}`}
+                        nombre={product.nombre}
+                        info={product.info}
+                        precio={product.precio}
+                        id={product.id}
+                        stock={product.stock}
                         />
                     </div>
                 )

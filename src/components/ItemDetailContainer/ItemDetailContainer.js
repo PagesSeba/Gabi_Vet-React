@@ -11,7 +11,7 @@ import "./ItemDetailContainer.css"
 function ItemDetailContainer() {
     
     const { id } = useParams();
-    const [casaca, setCasaca] = useState({});
+    const [product, setProduct] = useState({});
     const navigate = useNavigate()
 
 
@@ -23,7 +23,7 @@ function ItemDetailContainer() {
         if (docSnap.exists()) {
             let product = docSnap.data()
             product.id = docSnap.id
-            setCasaca(product)
+            setProduct(product)
     
         } else {
             navigate("*")
@@ -37,7 +37,7 @@ function ItemDetailContainer() {
 
     return(
         <div>
-            <ItemDetail item={casaca}/>
+            <ItemDetail item={product}/>
         </div>
     );
 }

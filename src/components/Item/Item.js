@@ -4,14 +4,12 @@ import "./Item.css"
 
 
 function Item(props) {
-    const{img , equipo , info , precio} = props
+    const{img , nombre } = props
     
     return(
         <div className="sombras cardM">
-            <img src={img} alt={img} className="casacas"></img>
-            <h2>{equipo}</h2>
-            <p className='small'>{info}</p>
-            <p className="precios">${precio}</p>
+            <img src={img} alt={img} className="imagenesCard"></img>
+            <h4>{nombre}</h4>
             <Button>Más Información</Button>
         </div>
     )

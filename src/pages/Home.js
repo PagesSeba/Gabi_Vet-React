@@ -23,13 +23,8 @@ const Home = () => {
         <div>
             <WppWidget />
             <div>
-                <h1>Bienvenidos a FutCor!</h1>
-                <h3>Nos dedicamos a la venta de camisetas de los mejores equipos de Córdoba Capital
-                </h3>
-                <h3>Proximos Ingresos:</h3>
                 <EmblaCarousel slides={slides}/>
             </div>
-            <h2>Todas las camisetas:</h2>
             <ItemListContainer />
             {/* <div className="App">
                 <Carousel breakPoints={breakPoints}>

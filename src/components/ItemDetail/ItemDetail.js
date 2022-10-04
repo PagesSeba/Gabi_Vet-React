@@ -5,18 +5,20 @@ import Button from '@mui/material/Button';
 import CartContext from "../../context/CartContext";
 import "./ItemDetail.css"
 
+
 function ItemDetail({item}){
-    const {img, equipo, precio, stock, info, detalle, talle} = item
+    const {img, marca, precio, stock, info, nombre, peso} = item
     const {cartProducts, addProductsToCart} = useContext(CartContext)
     const [click, setClick] = useState(true);
 
     
 
-    const onAdd = (contador) => {
+    const onAdd = (contador, kg) => {
         if (contador > 0 ){
             setClick(!click)
             item.stock-=contador;
             item.cantidad=contador;
+            item.peso = kg;
             addProductsToCart(item);
             console.log("agregado al carro:", item)
         
@@ -31,17 +33,18 @@ function ItemDetail({item}){
             </div>
             <div className="ItemDetailSM">
                 <div className="container-1">
-                <h2 className="precios">{equipo} {info}</h2>
-                <h6 className="equip">{equipo}</h6>
+                <h2 className="precios">{nombre}</h2>
+                <h6 className="equip">{marca}</h6>
                 </div>
                 <div className="gap-det">
-                    <h5 className="precios">Talle: {talle}</h5>
-                    <h5 className="precios">Detalle: {detalle}</h5>
+                    <h5 className="precios">Peso: {peso}</h5>
+                    <h5 className="precios">Información: {info}</h5>
                     <h5 className="precios">Precio: ${precio}</h5>
                     <h5 className="precios">Stock: {stock}</h5>
                 </div>
+
                 { click ? (
-                    <div>
+                    <div className="m-3">
                             <ItemCount stock={stock} onAdd={onAdd} initial={1}/>
                     </div>  
                 ) : (

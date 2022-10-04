@@ -57,17 +57,18 @@ function ItemListContainer() {
             {
                 !loading ? (
                     products.map((producto) => {
-                        const { id, equipo, precio, info, img, stock, categoria } = producto;
+                        const { id, nombre, precio, info, img, stock, categoria, marca } = producto;
                         if (category) {
                         return (
                             <Link className=' cardM linkNV negro' to={`./${id}`}>
                             <div key={id} className="sombras" >
                                 <Item
-                                    equipo={equipo}
+                                    nombre={nombre}
                                     precio={precio}
                                     info={info}
                                     img={`/assets/images/${img}`}
                                     stock={stock}
+                                    marca= {marca}
 
                                 />
                                
@@ -80,11 +81,12 @@ function ItemListContainer() {
                                 <Link className='cardM linkNV negro' to={`./${categoria}/${id}`}>
                                 <div key={id} className="sombras" >
                                     <Item
-                                        equipo={equipo}
+                                        nombre={nombre}
                                         precio={precio}
                                         info={info}
                                         img={`/assets/images/${img}`}
                                         stock={stock}
+                                        marca= {marca}
     
                                     />
                                    

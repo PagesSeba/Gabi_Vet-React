@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     width: 100%;
     padding: 10px 25px;
-    background-color:  #1c8b73;
+    background-color:  #cb3234;
     padding-right: 100px;
     box-sizing: border-box;
     align-items: center;
@@ -47,7 +47,7 @@
     color: #fff  !important;
   }
   .subMenuColor {
-    color: #1c8b73  !important;
+    color: #cb3234  !important;
 }
 
 @media screen and (max-width: 769px) {

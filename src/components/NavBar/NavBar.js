@@ -24,8 +24,8 @@ function NavBar() {
         <header className="headerInicio navbar navbar-expand-lg">
 
             <div className="marca">
-            <Link to={'/'} className="linkNV" alt="logo"><img src="futcorLogo.jpg" className="imgHeader"></img></Link>
-            <p className="nombreMarca">FUTCOR</p>
+            <Link to={'/'} className="linkNV" alt="logo"><img src="logo.jpg" className="imgHeader"></img></Link>
+            <p className="nombreMarca">undefined</p>
             </div>
         <div class="container" id="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,8 +53,9 @@ function NavBar() {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <Link to={"/Titular"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Locales</MenuItem></Link>
-                                <Link to={"/Suplente"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Suplentes</MenuItem></Link>
+                                <Link to={"/perro"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Perros</MenuItem></Link>
+                                <Link to={"/gato"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Gatos</MenuItem></Link>
+                                <Link to={"/accesorios"}  className="linkNV"><MenuItem className="subMenuColor" onClick={handleClose}>Accesorios</MenuItem></Link>
                             </Menu>
                             </li>
                 <li><Link to={'/faqs'} className="linkNV nav-item"><Button className='navBtn'>Preguntas Frecuentes</Button></Link></li>
