@@ -7,6 +7,8 @@ import ItemCarousel from "../components/ItemCarousel/ItemCarousel";
 import Carousel from "react-elastic-carousel";
 import "../components/ItemCarousel/ItemCarousel.css";
 import Item from "../components/Item/Item";
+import CardCategory from "../components/CardCategory/CardCategory";
+import SectionInfo from "../components/SectionInfo/SectionInfo";
 
 const SLIDE_COUNT = 4;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -25,12 +27,10 @@ const Home = () => {
             <div>
                 <EmblaCarousel slides={slides}/>
             </div>
+            <h3 className="mt-2">Destacado</h3>
             <ItemListContainer />
-            {/* <div className="App">
-                <Carousel breakPoints={breakPoints}>
-                <ItemListContainer></ItemListContainer>
-                </Carousel>
-            </div> */}
+            <CardCategory />
+            <SectionInfo />
         </div>
      )
 }

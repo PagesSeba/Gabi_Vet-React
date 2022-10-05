@@ -1,0 +1,16 @@
+.containerSection {
+    background-color: rgba(44,62,80,0.1);
+ }
+ .containerCardS {
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .cardCS {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+.icon {
+    width: 70px !important;
+    height: 70px !important;
+}

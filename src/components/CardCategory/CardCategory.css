@@ -1,0 +1,31 @@
+.containerGen {
+   background-color: #cb3234;
+   height: 400px;
+}
+.containerCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardC {
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cardC:hover {
+    transform: rotate(0.01turn);
+}
+.cardImg {
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+}
+.hov {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.hov:hover {
+    color: lightblue;
+    
+}
