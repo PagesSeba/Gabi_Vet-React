@@ -14,7 +14,7 @@ const CardCategory = () => {
                 <div className="cardC">
                         <div >
                             <Link to={"/perro"}  className="hov">
-                                <img src="./images/perro.jpg" alt="perro" className="cardImg border"  />
+                                <img src="./images/bulldog.png" alt="perro" className="cardImg"  />
                                 <h4 className="mt-2 hov">PERROS</h4>
                             </Link>
                         </div>
@@ -22,7 +22,7 @@ const CardCategory = () => {
                 <div className="cardC">
                         <div >
                             <Link to={"/gato"} className="hov">
-                                <img src="./images/gato.jpg" alt="gato" className="cardImg border" ></img>
+                                <img src="./images/persian-cat.png" alt="gato" className="cardImg" ></img>
                             <h4 className=" mt-2 hov">GATOS</h4>
                             </Link>
                         </div>
@@ -30,7 +30,7 @@ const CardCategory = () => {
                 <div className="cardC">
                         <div>
                             <Link to={"/accesorios"}  className="hov">
-                                <img src="./images/accesorios.jpg" alt="accesorios" className="cardImg border" ></img>
+                                <img src="./images/collar.png" alt="accesorios" className="cardImg" ></img>
                                 <h4 className="mt-2 hov">ACCESORIOS</h4>
                             </Link>
                         </div>
