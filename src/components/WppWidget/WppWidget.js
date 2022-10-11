@@ -7,12 +7,13 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const WppWidget = () => {
     return(
-       
+        
             <Link to={""} className="linkNV">
-                <button className="wpp iconStatic">
+                <button className="wpp iconStatic z-in">
                     <WhatsAppIcon />
                 </button>
             </Link>
+    
 
     )
 }

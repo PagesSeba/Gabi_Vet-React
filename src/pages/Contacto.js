@@ -46,7 +46,7 @@ const Contacto = () => {
                 />
             </div>
             <div className='formTerms'>
-                <h5>Acepto los términos y condiciones de FutCor:</h5>
+                <h5>Acepto los términos y condiciones de Gabilan:</h5>
                 <Checkbox required />
             </div>
             <div className='formBtn'>
