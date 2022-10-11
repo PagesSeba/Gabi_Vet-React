@@ -29,3 +29,8 @@
     color: lightblue;
     
 }
+@media screen and (max-width:780px) {
+    .cardC {
+      transition: none;
+    }
+  }

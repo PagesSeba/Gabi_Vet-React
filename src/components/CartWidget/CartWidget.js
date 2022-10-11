@@ -65,9 +65,9 @@ function CartWidget() {
                             </div>
                             <div className='infoCarrito'>
                                 <div className="precios col">
-                                    <span>{cartProduct.equipo} {cartProduct.categoria}</span>
+                                    <span>{cartProduct.marca}</span>
                                     <span>x{cartProduct.cantidad}</span>
-                                    <span>${cartProduct.precio}</span>
+                                    <span>${cartProduct.precio * cartProduct.cantidad}</span>
                                 </div>
                             </div>
                             <IconButton onClick={() => deleteProducts(cartProduct)}>

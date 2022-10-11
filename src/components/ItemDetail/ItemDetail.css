@@ -2,6 +2,9 @@
     font-weight: bold;
     margin-bottom: 1.5rem;
   }
+  .tamano {
+    height: 65px;
+  }
   .ItemDetailCard {
     display: flex;
     flex-direction: row;

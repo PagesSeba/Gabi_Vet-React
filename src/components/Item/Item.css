@@ -14,10 +14,20 @@
   .cardM {
     width: 300px;
     height: 360px;
+    transition: all 1s;
+  }
+  .cardM:hover {
+    transform: scale(1.01);
   }
   .small {
     font-size: small;
   }
   .precios {
     font-weight: bold;
+  }
+
+  @media screen and (max-width:780px) {
+    .cardM {
+      transition: none;
+    }
   }

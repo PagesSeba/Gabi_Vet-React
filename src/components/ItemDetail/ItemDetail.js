@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import Button from '@mui/material/Button';
 import CartContext from "../../context/CartContext";
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import "./ItemDetail.css"
 
 
@@ -18,7 +20,6 @@ function ItemDetail({item}){
             setClick(!click)
             item.stock-=contador;
             item.cantidad=contador;
-            item.peso = kg;
             addProductsToCart(item);
             console.log("agregado al carro:", item)
         
@@ -37,14 +38,22 @@ function ItemDetail({item}){
                 <h6 className="equip">{marca}</h6>
                 </div>
                 <div className="gap-det">
-                    <h5 className="precios">Peso: {peso}</h5>
                     <h5 className="precios">Información: {info}</h5>
                     <h5 className="precios">Precio: ${precio}</h5>
                     <h5 className="precios">Stock: {stock}</h5>
                 </div>
 
                 { click ? (
-                    <div className="m-3">
+                    <div className="ms-5 m-3 d-flex align-self-center ">
+                         <ToggleButtonGroup
+                value={peso}
+                exclusive
+                className="gap-4"
+                >
+                             <ToggleButton value="peso"  className='border tamano' selected>
+                            <h6>{peso}</h6>
+                            </ToggleButton>
+                            </ToggleButtonGroup>
                             <ItemCount stock={stock} onAdd={onAdd} initial={1}/>
                     </div>  
                 ) : (

@@ -9,6 +9,7 @@ import "../components/ItemCarousel/ItemCarousel.css";
 import Item from "../components/Item/Item";
 import CardCategory from "../components/CardCategory/CardCategory";
 import SectionInfo from "../components/SectionInfo/SectionInfo";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const SLIDE_COUNT = 4;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -24,10 +25,8 @@ const Home = () => {
     return(
         <div>
             <WppWidget />
-            <div>
-                <EmblaCarousel slides={slides}/>
-            </div>
-            <h3 className="mt-2">Destacado</h3>
+            <HeroSection />
+            <h3 className="mt-4">Destacado</h3>
             <ItemListContainer />
             <CardCategory />
             <SectionInfo />

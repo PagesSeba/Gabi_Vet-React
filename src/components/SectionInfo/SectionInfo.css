@@ -2,6 +2,7 @@
     background-color: rgba(44,62,80,0.1);
  }
  .containerCardS {
+    gap: 5rem;
      display: flex;
      justify-content: space-evenly;
  }
@@ -13,4 +14,7 @@
 .icon {
     width: 70px !important;
     height: 70px !important;
+}
+.wi {
+    max-width: 140px;
 }

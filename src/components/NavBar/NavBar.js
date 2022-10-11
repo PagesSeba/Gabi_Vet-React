@@ -42,7 +42,7 @@ function NavBar() {
                                 aria-expanded={open ? 'true' : undefined}
                                 onClick={handleClick}
                             >
-                                Camisetas
+                                Productos
                             </Button>
                             <Menu
                                 id="basic-menu"
