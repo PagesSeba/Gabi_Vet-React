@@ -28,6 +28,8 @@ const Contacto = () => {
 
   return (
         <section className='form'>
+
+        <h1 className='mb-5'>Contactá con Nosotros</h1>
         <form ref={form} onSubmit={sendEmail}>
             <div  className='formInput'>
                 <TextField required placeholder='Nombre y Apellido' inputProps={ariaLabel} type="text" name="name" id='name' />

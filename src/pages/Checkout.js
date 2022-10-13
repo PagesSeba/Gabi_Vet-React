@@ -134,7 +134,7 @@ const Checkout = () => {
 
 
     return (
-            <div>
+            <div className="divGen">
         {
                 loading ? (
                     <div className="checkoutMain">

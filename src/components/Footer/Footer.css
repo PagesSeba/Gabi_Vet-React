@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-.footerComponent {
-    margin-top: 5rem;
-}
+
 .footerbgcolor {
     background-color: #ced4da;
     box-shadow: 1px 1px 10px grey;
@@ -18,13 +17,13 @@
 }
 .positionIconsGroup {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     gap: 1rem;
 }
 .positionPaymentImg {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     gap: 1rem;
 }
@@ -58,6 +57,17 @@
     color: #fff;
     transition: all 1s;
 }
+.fb {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #fff;
+    transition: all 1s;
+}
+.fb:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #3b5998;
+}
 .tw:hover {
     background-color: #fff;
     border-color: #fff;
@@ -87,20 +97,123 @@
     height: 30px;
 }
 
-@media screen and (max-width: 550px) {
-    .inFooterPs {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textBlanco {
+    color: #ffffff;
+}
+
+.main-footer {
+    margin-top: 6.5rem;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #65727c;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+  background-color: #65727c;
+  border-top: 1px solid #fff;
+  font-size: 17px;
+  padding: 20px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.sociallogos{
+  padding:20px 0;
+}
+
+.sociallogos .logobox a{
+  padding:0 10px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:22px;
+}
+
+.com ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
   }
-  
-  @media screen and (max-width: 400px) {
-    .inFooterPs {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+    .info{
+      padding:20px 0;
   }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos{
+    padding:20px 0;
+  }
+  .com{
+    padding:20px 0;
+  } 
+
+}

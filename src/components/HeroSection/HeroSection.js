@@ -8,8 +8,8 @@ const HeroSection = () => {
         <div class="hero">
   <div class="overlay"></div>
   <div class="content">
-    <h1>A Beautiful Hero Section.</h1>
-    <p>This shit looks great, huh?</p>
+    <h1>Bienvenidos a Hero Section</h1>
+    <p>Todo para tus mascotas</p>
     <Link to={"/perro"} className="linkNV"> <Button variant="contained" color="error">Ver Productos</Button> </Link>
   </div>
 </div>

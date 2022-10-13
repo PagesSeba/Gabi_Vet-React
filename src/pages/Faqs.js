@@ -10,7 +10,7 @@ const Faqs = () => {
             <Grid>
             <h1> Preguntas Frecuentes</h1>
             </Grid>
-            <Accordion defaultActiveKey="0" className="mt-5">
+            <Accordion defaultActiveKey="0" className="mt-5 p-5">
       <Accordion.Item eventKey="0">
         <Accordion.Header>¿Como comprar?</Accordion.Header>
         <Accordion.Body>
