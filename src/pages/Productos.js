@@ -3,11 +3,11 @@ import React from 'react';
 //Components
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
 
-const Camisetas = () => {
+const Productos = () => {
     return (
         <ItemListContainer />
     )
 }
 
 
-export default Camisetas
+export default Productos

@@ -9,8 +9,8 @@ import Footer from './components/Footer/Footer';
 
 // pages
 import Home from './pages/Home';
-import Camisetas from './pages/Camisetas';
-import CamisetasDetalle from './pages/CamisetasDetalle';
+import Productos from './pages/Productos';
+import ProductosDetalle from './pages/ProductosDetalle';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
 import Carrito from './pages/Carrito';
@@ -33,8 +33,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path='*' element={<Error404 />}/>
-                <Route path="/:category" element={<Camisetas />} />
-                <Route path="/:category/:id" element={<CamisetasDetalle />} />
+                <Route path="/:category" element={<Productos />} />
+                <Route path="/:category/:id" element={<ProductosDetalle />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path='/faqs' element={<Faqs />} />
                 <Route path="/cart" element={<Carrito />} />

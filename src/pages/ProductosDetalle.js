@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import React from "react"
 import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer"
 
-const CamisetasDetalle = () => {
+const ProductosDetalle = () => {
         const { id } = useParams();
 
         return(
@@ -12,4 +12,4 @@ const CamisetasDetalle = () => {
         )
     }
 
-export default CamisetasDetalle
+export default ProductosDetalle
