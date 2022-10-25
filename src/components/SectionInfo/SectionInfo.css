@@ -18,3 +18,9 @@
 .wi {
     max-width: 140px;
 }
+
+@media screen and (max-width:550px) {
+    .containerCardS {
+        gap: 1rem;
+     }
+  }

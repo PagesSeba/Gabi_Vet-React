@@ -3,7 +3,7 @@ import "./Checkout.css"
 import { useContext, useState } from "react"
 import CartContext from "../context/CartContext"
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import db from "../firebase"
 import { collection, addDoc } from "firebase/firestore";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -17,6 +17,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { Container } from "@mui/material";
 import { IconButton } from "@mui/material";
+import MercadoPagoIntegracion from "./MercadoPagoIntegracion";
+
 
 const Checkout = () => {
     const form = useRef();
@@ -108,6 +110,7 @@ const Checkout = () => {
             setLoading(false)
 
     }
+    const [pagar, setpagar] = useState(true);
     const handleClose = () => {
 
         navigate("/")
@@ -119,6 +122,11 @@ const Checkout = () => {
     const handleChange = (event) => {
         setValue(event.target.value);
       };
+
+      const onSubmit = async(e) => {
+        e.preventDefault();
+        setpagar(false);
+          };
 
     //   const entrega = () => {
     //     let value = document.getElementById([1])
@@ -185,8 +193,9 @@ const Checkout = () => {
                                             
                                     }
                                 
-
-                                    <Button type="submit" variant="contained" color="primary" className="btnForm" value="Send Email" id="button">Enviar</Button>
+                                    <Link to={"/payment"}>
+                                        <Button type="submit" variant="contained" color="primary" className="btnForm" value="Send Email" id="button">Enviar</Button>
+                                    </Link>
                                 </form>
                             </div>
                             <div className="resumenCart">
@@ -209,6 +218,7 @@ const Checkout = () => {
                                 }
                             )}
                             
+                            
                             <p className="resumenBottom">Total: ${totalPrice()}</p>
                         </div>
                     </div>
@@ -220,11 +230,13 @@ const Checkout = () => {
                             <CircularProgress  color="success"/>
                         </Box>
                     ) : (
-                        <form id="form" className="formCompraLista">
+                        <form id="form" className="formCompraLista" onSubmit={onSubmit}>
                             <div className="formCompraListaInt">
                             <h3> Muchas gracias por su compra! Su orden se ha generado exitosamente</h3>
                             <p>Su numero de órden es: <span className="orderCode">{orderLista}</span></p>
                             <Button onClick={handleClose} variant="contained" color="warning">Volver</Button>
+                            <Button type="submit" variant="contained" color="primary">Pagar</Button>
+                            {(pagar)?null:<MercadoPagoIntegracion  items={orderLista}/>}
                             </div>
                         </form>)
 

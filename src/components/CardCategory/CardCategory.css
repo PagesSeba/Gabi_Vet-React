@@ -21,16 +21,35 @@
     border-radius: 50%;
 }
 .hov {
+    display: block;
     color: white;
     text-decoration: none;
     transition: all 0.5s;
-}
-.hov:hover {
-    color: lightblue;
-    
 }
 @media screen and (max-width:780px) {
     .cardC {
       transition: none;
     }
+    .containerGen {
+        height: 250px;
+     }
+     .cardImg {
+    width: 130px;
+    height: 140px;
+     }
+  }
+  @media screen and (max-width:424px) {
+    .hov {
+        display: none;
+    }
+    .cardC {
+      transition: none;
+    }
+    .containerGen {
+        height: 220px;
+     }
+     .cardImg {
+    width: 100px;
+    height: 120px;
+     }
   }

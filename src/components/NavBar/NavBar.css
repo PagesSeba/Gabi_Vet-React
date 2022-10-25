@@ -24,8 +24,8 @@
   } 
   
   .imgHeader {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
     border-radius: 100px;
     margin-right: 25px;
@@ -33,6 +33,7 @@
   
   .marca {
     display: flex;
+    position: relative;
     left: 30px;
     align-items: baseline;
   }
@@ -64,6 +65,7 @@
 @media screen and (max-width: 550px) {
   .marca {
     position: relative;
+    left: 30px;
   }
   .nombreMarca {
     display: none;
@@ -76,6 +78,7 @@
 @media screen and (max-width: 400px) {
   .marca {
     position: relative;
+    left: 30px;
   }
   .nombreMarca {
     display: none;
