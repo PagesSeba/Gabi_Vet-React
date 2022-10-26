@@ -21,8 +21,6 @@ import Faqs from './pages/Faqs';
 import {CartProvider} from './context/CartContext';
 
 
-
-
 function App() {
   return (
     <div className="App">

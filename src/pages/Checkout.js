@@ -17,7 +17,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { Container } from "@mui/material";
 import { IconButton } from "@mui/material";
-import MercadoPagoIntegracion from "./MercadoPagoIntegracion";
+import ResBack from "../components/ResBack";
 
 
 const Checkout = () => {
@@ -138,9 +138,6 @@ const Checkout = () => {
     //         document.getElementById("texto").innerHTML = "Entrega a domicilio"
     //     }
     //   }
-
-
-
     return (
             <div className="divGen">
         {
@@ -149,6 +146,7 @@ const Checkout = () => {
                         <div className="checkout">
                             <div className="formCompra">
                                 <h2>Finalizar Compra</h2>
+                                <ResBack />
                                 <form ref={form} id="form" className="formInt" onSubmit={formSubmit || sendEmail}>
                                     <input className="inputsCheckout" type="text" name="name" placeholder="Nombre Completo" onChange={dataUsuario} value={formData.name} required id="name" />
                                     <input className="inputsCheckout" type="number" name="phone" placeholder="Número de Telefono" onChange={dataUsuario} value={formData.phone} required id="phone" />
@@ -236,7 +234,6 @@ const Checkout = () => {
                             <p>Su numero de órden es: <span className="orderCode">{orderLista}</span></p>
                             <Button onClick={handleClose} variant="contained" color="warning">Volver</Button>
                             <Button type="submit" variant="contained" color="primary">Pagar</Button>
-                            {(pagar)?null:<MercadoPagoIntegracion  items={orderLista}/>}
                             </div>
                         </form>)
 
