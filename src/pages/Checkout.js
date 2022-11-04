@@ -146,7 +146,6 @@ const Checkout = () => {
                         <div className="checkout">
                             <div className="formCompra">
                                 <h2>Finalizar Compra</h2>
-                                <ResBack />
                                 <form ref={form} id="form" className="formInt" onSubmit={formSubmit || sendEmail}>
                                     <input className="inputsCheckout" type="text" name="name" placeholder="Nombre Completo" onChange={dataUsuario} value={formData.name} required id="name" />
                                     <input className="inputsCheckout" type="number" name="phone" placeholder="Número de Telefono" onChange={dataUsuario} value={formData.phone} required id="phone" />
@@ -191,9 +190,9 @@ const Checkout = () => {
                                             
                                     }
                                 
-                                    <Link to={"/payment"}>
+                                  
                                         <Button type="submit" variant="contained" color="primary" className="btnForm" value="Send Email" id="button">Enviar</Button>
-                                    </Link>
+                                   
                                 </form>
                             </div>
                             <div className="resumenCart">
@@ -232,8 +231,10 @@ const Checkout = () => {
                             <div className="formCompraListaInt">
                             <h3> Muchas gracias por su compra! Su orden se ha generado exitosamente</h3>
                             <p>Su numero de órden es: <span className="orderCode">{orderLista}</span></p>
-                            <Button onClick={handleClose} variant="contained" color="warning">Volver</Button>
-                            <Button type="submit" variant="contained" color="primary">Pagar</Button>
+                                <div className="pagos d-flex justify-content-around">
+                                    <Button onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
+                                    <ResBack />
+                                </div>
                             </div>
                         </form>)
 

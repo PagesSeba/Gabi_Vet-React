@@ -1,4 +1,6 @@
+import { Button } from "@mui/material";
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 const ResBack = () => {
     const [initialState, setInitialState] = useState([])
@@ -18,8 +20,9 @@ const ResBack = () => {
     console.log("valor " + initialState)
      return(
         <div>
-            <h6>Response</h6>
-            <li>{initialState}</li>
+            <a className="linkNV" href={initialState} Target="_blank">
+                <Button variant="contained">Pagar con Mercado Pago</Button>
+            </a>
         </div>
     )
 }

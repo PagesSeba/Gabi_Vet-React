@@ -24,6 +24,9 @@
   .btnForm {
     margin-bottom: 20px !important;
   }
+  .pagos {
+    gap: 2rem;
+  }
   .divGen {
     padding: 2rem;
   }
