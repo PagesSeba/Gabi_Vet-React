@@ -19,7 +19,7 @@ const ResBack = () => {
      return(
         <div>
             <h6>Response</h6>
-             {initialState.length > 0 && initialState.map((e,i) => <li key={i}>{e}</li> )}
+            <li>{initialState}</li>
         </div>
     )
 }
