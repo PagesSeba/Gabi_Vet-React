@@ -68,7 +68,7 @@ const Footer = () => {
                     </div>
         </div>
               
-        <footer>© Plus Pet Córdoba 2022</footer>
+        <footer>© Pet Club Córdoba 2022</footer>
 </section>
 )
 }

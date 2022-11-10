@@ -3,7 +3,7 @@ import Item from '../Item/Item'
 import {Link, useParams} from "react-router-dom"
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
-import { collection, getDocs} from "firebase/firestore"
+import { collection, getDocs, orderBy, limit } from "firebase/firestore"
 import db from "../../firebase"
 import "./ItemListContainer.css"
 
@@ -15,7 +15,8 @@ function ItemListContainer() {
     const [loading, setLoading] = useState(true)
 
     const getProducts = async () => {
-        const itemsCollection = collection(db, "productos")
+        const itemsCollection = collection(db, "productos") 
+        console.log(itemsCollection)
         const productosSnapshot = await getDocs(itemsCollection)
         const productList = productosSnapshot.docs.map((doc) => {
             let product = doc.data()
@@ -26,14 +27,14 @@ function ItemListContainer() {
     
     }
 
+
+
     useEffect(() => {
         setLoading(true)
         setProducts([])
         return getProducts().then((productos) => {
             setLoading(false)
             category ? filterProductByCategory(productos, category) : setProducts(productos)
-            
-            
             
         })
 
@@ -49,13 +50,17 @@ function ItemListContainer() {
 
     }
 
-
     return (
-        
+        <div>
+
+        <div>
+
+          
+        </div>
         <div className="cInicio">
-            
             {
                 !loading ? (
+                    
                     products.map((producto) => {
                         const { id, nombre, precio, info, img, stock, categoria, marca } = producto;
                         if (category) {
@@ -107,6 +112,7 @@ function ItemListContainer() {
                 )
             }
 
+        </div>
         </div>
 
 

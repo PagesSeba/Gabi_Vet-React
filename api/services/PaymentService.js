@@ -1,28 +1,19 @@
 const axios = require("axios");
 
+
 class PaymentService {
   async createPayment() {
     const url = "https://api.mercadopago.com/checkout/preferences";
 
     const body = {
-      payer_email: "test_user_46945293@testuser.com",
+      payer_email: "asdasd@gmail.com",
       items: [
         {
-          title: "Ken-L Razas Grandes",
-          description: "Comida Ken-L Perros Grandes",
-          picture_url: "http://www.myapp.com/myimage.jpg",
-          category_id: "nmro de orden",
-          quantity: 3,
-          unit_price: 500
-        },
-        {
-          title: "Ken-L Razas Grandes",
-          description: "Comida Ken-L Perros Grandes",
-          picture_url: "http://www.myapp.com/myimage.jpg",
-          category_id: "nmro de orden",
-          quantity: 1,
-          unit_price: 500
-        }
+            title: "Producto",
+            picture_url: "http://www.myapp.com/myimage.jpg",
+            quantity: 1,
+            unit_price: 200
+          }
       ],
       back_urls: {
         failure: "/failure",

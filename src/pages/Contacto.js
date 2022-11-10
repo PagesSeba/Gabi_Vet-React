@@ -16,7 +16,7 @@ const Contacto = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("gmailMessage", "template_cra0uop", form.current, "mCv1K4QfJ6UEr9SlF")
+    emailjs.sendForm("gmailMessage", "template_15p059q", form.current, "coWj-nTAV7r_XBBk-")
       .then((result) => {
           console.log(result.text);
           alert("Mensaje Enviado con éxito!")

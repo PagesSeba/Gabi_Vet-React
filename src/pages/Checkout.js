@@ -59,7 +59,7 @@ const Checkout = () => {
     const [order, setOrder] = useState(
         {
             buyer: formData,
-            items: cartProducts.map((product) => {
+             items: cartProducts.map((product) => {
                 return {
                     nombre: product.nombre,
                     peso: product.peso,
@@ -235,12 +235,19 @@ const Checkout = () => {
                                     <Button onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
                                     <ResBack />
                                 </div>
+                                <form action="http://localhost:3001/checkout" method="POST">
+                                    <input type="hidden" name="title" value={orderLista} />
+                                    <input type="hidden" name="price" value={totalPrice()} />
+                                    <input type="submit" className="btnPagar" value="Pagar" />
+
+                                </form>
                             </div>
                         </form>)
 
                 )
             }
             </div>
+            
     )
 
 

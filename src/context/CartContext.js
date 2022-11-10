@@ -1,4 +1,4 @@
-import React, {createContext, useState} from "react"
+const {React  ,createContext, useState} = require ("react")
 
 const CartContext = createContext()
 
