@@ -10,6 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { IconButton } from "@mui/material";
 import FacebookIcon from '@mui/icons-material/Facebook';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Footer = () => {
     return(
@@ -19,21 +20,21 @@ const Footer = () => {
             <div className="mb-2 d-flex flex-column">
                         <h3 className="textBlanco">Nuestras Redes</h3>
                         <div className="positionIconsGroup">
-                            <Link to={""}  className="linkNV">
+                            <a href="https://www.instagram.com/petclub_cba/" target="_blank"  className="linkNV">
                                 <IconButton className="ig iconsFooter">
                                     <InstagramIcon />
                                 </IconButton>
-                            </Link>
-                            <Link to={""} className="linkNV">
+                            </a>
+                            <a href="https://goo.gl/maps/W3ESghUEeWaa1xyB7" className="linkNV" target="_blank">
                                 <IconButton className="tw iconsFooter">
-                                    <TwitterIcon />
+                                    <LocationOnIcon />
                                 </IconButton>
-                            </Link>
-                            <Link to={""} className="linkNV">
+                            </a>
+                            <a href="https://www.facebook.com/people/Pet-Club/100087925233602/?mibextid=LQQJ4d" target="_blank" className="linkNV">
                                 <IconButton className="fb iconsFooter">
                                     <FacebookIcon />
                                 </IconButton>
-                            </Link>
+                            </a>
                         </div>
                         </div>
 
@@ -48,8 +49,8 @@ const Footer = () => {
                 </div>
             </div>
         <div className="com ">
-            <h3 className="textBlanco">Mapa</h3>
-            <ul className="px-0">
+            <h3 className="textBlanco">Búsqueda</h3>
+            <ul className="px-0 align-links">
             <li><Link to={"/"} >Inicio</Link></li>
             <li><Link to={"/perro"} >Perros</Link></li>
             <li><Link to={"/gato"} >Gatos</Link></li>

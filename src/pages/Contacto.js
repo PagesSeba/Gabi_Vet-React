@@ -4,7 +4,10 @@ import React, { useRef } from 'react';
 import emailjs from "emailjs-com"
 import { TextField, CircularProgress, Modal, Button, Box } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 import "./../components/Form/Form.css"
+
 
 const ariaLabel = { 'aria-label': 'description' };
 
@@ -19,7 +22,9 @@ const Contacto = () => {
     emailjs.sendForm("gmailMessage", "template_15p059q", form.current, "coWj-nTAV7r_XBBk-")
       .then((result) => {
           console.log(result.text);
-          alert("Mensaje Enviado con éxito!")
+          <Stack sx={{ width: '100%' }} spacing={2}>
+          <Alert severity="success">Mensaje Enviado Con Éxito!</Alert>
+        </Stack>
       }, (error) => {
           console.log(error.text);
       });

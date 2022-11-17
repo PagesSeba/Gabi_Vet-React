@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
+.align-links{
+  text-align: left;
+}
 .footerbgcolor {
     background-color: #ced4da;
     box-shadow: 1px 1px 10px grey;
@@ -34,8 +36,8 @@
     
 }
 .tw {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #cb3234;
+    border-color: #cb3234;
     color: #fff;
     transition: all 1s;
 }
@@ -71,7 +73,7 @@
 .tw:hover {
     background-color: #fff;
     border-color: #fff;
-    color: #0d6efd;
+    color: #cb3234;
 }
 .ig:hover {
     background-color: #fff;

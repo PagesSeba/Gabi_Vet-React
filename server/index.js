@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 //credenciales Vendedor (Vendedor Test)
 
 mercadopago.configure({
-    access_token: "TEST-3040702491948902-092016-75a5f08da2f0466ad19ecce2612acb79-540123803"
+    access_token: "APP_USR-8448919236745527-111218-8799b297ec663f5ad948e3f11800b34e-1236891359"
 });
 
 
