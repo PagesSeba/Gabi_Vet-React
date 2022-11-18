@@ -99,7 +99,7 @@ function ItemListContainer() {
                 !loading ? (
                     
                     products.map((producto) => {
-                        const { id, nombre, precio, info, img, stock, marca } = producto;
+                        const { id, nombre, precio, info, img, stock, marca, peso } = producto;
                             return (
                             
                                 <Link className='cardM linkNV negro' to={`./${id}`}>
@@ -108,6 +108,7 @@ function ItemListContainer() {
                                         nombre={nombre}
                                         precio={precio}
                                         info={info}
+                                        peso={peso}
                                         img={`/assets/images/${img}`}
                                         stock={stock}
                                         marca= {marca}

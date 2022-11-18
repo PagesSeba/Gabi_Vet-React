@@ -33,7 +33,7 @@
     "web-vitals": "^3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run watch\" \"react-scripts start\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "watch": "npx nodemon server/index",

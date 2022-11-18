@@ -64,7 +64,7 @@ function TrendingProducts() {
                 !loading ? (
                     
                     products.map((producto) => {
-                        const { id, nombre, precio, info, img, stock, marca, destacado } = producto;
+                        const { id, nombre, precio, info, img, stock, marca, destacado, peso } = producto;
                         if (destacado) {
                             return (
                             
@@ -73,6 +73,7 @@ function TrendingProducts() {
                                     <Item
                                         nombre={nombre}
                                         precio={precio}
+                                        peso= {peso}
                                         info={info}
                                         img={`/assets/images/${img}`}
                                         stock={stock}

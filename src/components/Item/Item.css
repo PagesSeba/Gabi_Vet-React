@@ -1,4 +1,5 @@
 .imagenesCard {
+     width: auto;
     height: 200px;
     margin-top: 5px;
     object-fit: cover;
@@ -25,8 +26,14 @@
   .precios {
     font-weight: bold;
   }
+  .cardText {
+    font-size: medium;
+  }
 
   @media screen and (max-width:780px) {
+    .imagenesCard {
+      width: 100px;
+    }
     .cardM {
       width: 170px;
       height: 300px;
@@ -34,6 +41,9 @@
     }
     h4 {
       font-size:  calc(0.8rem + .3vw) !important;
+    }
+    .cardText {
+      font-size: 0.8rem;
     }
   }
 
@@ -48,11 +58,15 @@
       font-size:  calc(0.5rem + .3vw) !important;
     }
     .imagenesCard {
+      width: 80px;
       height: 110px;
       margin-top: 5px;
       object-fit: cover;
     }
     .textSm {
       font-size: 0.575rem !important;
+    }
+    .cardText {
+      font-size: 0.475rem;
     }
   }
