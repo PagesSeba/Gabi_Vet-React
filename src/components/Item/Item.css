@@ -1,7 +1,7 @@
 .imagenesCard {
-    width: 150px;
     height: 200px;
     margin-top: 5px;
+    object-fit: cover;
   }
   .sombras {
       box-shadow: 1px 1px 5px grey;

@@ -10,6 +10,8 @@ import Footer from './components/Footer/Footer';
 // pages
 import Home from './pages/Home';
 import Productos from './pages/Productos';
+import ProductosGato from './pages/ProductosGato';
+import ProductosAccess from './pages/ProductosAccess';
 import ProductosDetalle from './pages/ProductosDetalle';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
@@ -31,7 +33,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path='*' element={<Error404 />}/>
-                <Route path="/:category" element={<Productos />} />
+                <Route path="/:perro" element={<Productos />} />
+                <Route path="/:gato" element={<ProductosGato />} />
+                <Route path="/:accesorios" element={<ProductosAccess />} />
                 <Route path="/:category/:id" element={<ProductosDetalle />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path='/faqs' element={<Faqs />} />

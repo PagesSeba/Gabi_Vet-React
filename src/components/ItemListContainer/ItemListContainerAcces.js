@@ -9,15 +9,14 @@ import "./ItemListContainer.css"
 
 
 
-function ItemListContainer() {
-    const { category } = useParams();
+function ItemListContainerAcces() {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const [lastVisible, setLastVisible] = useState([])
     const [firstVisible, setFirstVisible] = useState([])
 
     const getProducts = async () => {
-        const itemsCollection = query(collection(db, "productos"), orderBy("nombre", "asc") , limit(4))
+        const itemsCollection = query(collection(db, "accesorios"), orderBy("nombre", "asc") , limit(4))
         console.log(itemsCollection)
         const productosSnapshot = await getDocs(itemsCollection)
         setLastVisible(productosSnapshot.docs[productosSnapshot.docs.length-1]);
@@ -48,7 +47,7 @@ function ItemListContainer() {
 
 
     const prevDoc = async () => {
-        const prev = query(collection(db, "productos"), orderBy("nombre", "desc"), startAfter(firstVisible), limit(4))
+        const prev = query(collection(db, "accesorios"), orderBy("nombre", "desc"), startAfter(firstVisible), limit(4))
         console.log("prev", prev);
         const productosSnapshot = await getDocs(prev)
         getDocs(prev).then((snapshoot) => {
@@ -63,7 +62,7 @@ function ItemListContainer() {
         })
     }
     const nextDoc = async () => {
-        const next = query(collection(db, "productos"), orderBy("nombre", "asc"), startAfter(lastVisible), limit(4))
+        const next = query(collection(db, "accesorios"), orderBy("nombre", "asc"), startAfter(lastVisible), limit(4))
         console.log("next", next);
         const productosSnapshot = await getDocs(next)
         getDocs(next).then((snapshoot) => {
@@ -111,6 +110,7 @@ function ItemListContainer() {
                                 </Link>
                             )}
 
+                    
 
 
 
@@ -130,4 +130,4 @@ function ItemListContainer() {
     )
 }
 
-export default ItemListContainer
+export default ItemListContainerAcces
