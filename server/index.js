@@ -1,13 +1,20 @@
 const express = require("express");
 const app = express();
+const path = require("path")
 const bodyParser= require("body-parser")
 
+
+const port = process.env.PORT || 3001
 //SDK Mercadopago
 const mercadopago = require("mercadopago");
 
 //middleware
 
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.static('build'))
+app.get('*', (req,res) => {
+  req.sendFile(path.resolve(__dirname,'build','index.html'))
+})
 
 //credenciales Vendedor (Vendedor Test)
 
@@ -41,7 +48,7 @@ app.post('/checkout', (req, res) => {
 });
 
 //server
-app.listen(3001, () => {
-    console.log("Server on port 3001")
+app.listen(port, () => {
+    console.log("Server on port:", port)
 
 })
