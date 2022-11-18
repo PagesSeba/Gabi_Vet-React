@@ -6,6 +6,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { collection, getDocs, orderBy, limit, query, startAfter} from "firebase/firestore"
 import db from "../../firebase"
 import "./ItemListContainer.css"
+import { IconButton } from '@mui/material';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 
 
@@ -83,9 +86,13 @@ function ItemListContainerGato() {
     return (
         <div>
 
-        <div>
-        <button onClick={prevDoc} >Anterior</button>
-          <button onClick={nextDoc} >Siguiente</button>
+        <div className='paginationButton mt-4'>
+            <IconButton variant="contained" color='success'>
+                <ArrowCircleLeftIcon onClick={prevDoc} />
+            </IconButton>
+            <IconButton variant="contained" color='success'>
+                <ArrowCircleRightIcon onClick={nextDoc} />
+            </IconButton>
         </div>
         <div className="cInicio">
             {

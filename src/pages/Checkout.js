@@ -233,12 +233,11 @@ const Checkout = () => {
                             <p>Su numero de órden es: <span className="orderCode">{orderLista}</span></p>
                                 <div className="pagos d-flex justify-content-around">
                                     <Button onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
-                                    <ResBack />
                                 </div>
                                 <form action="http://localhost:3001/checkout" method="POST">
                                     <input type="hidden" name="title" value={orderLista} />
                                     <input type="hidden" name="price" value={totalPrice()} />
-                                    <input type="submit" className="btnPagar" value="Pagar" />
+                                    <Button type="submit" className="btnPagar" variant="contained" value="Pagar">Pagar con mercado pago</Button>
 
                                 </form>
                             </div>

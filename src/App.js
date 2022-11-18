@@ -13,6 +13,8 @@ import Productos from './pages/Productos';
 import ProductosGato from './pages/ProductosGato';
 import ProductosAccess from './pages/ProductosAccess';
 import ProductosDetalle from './pages/ProductosDetalle';
+import ProductosGatoDetalle from './pages/ProductosGatoDetalle';
+import ProductosAccessDetalle from './pages/ProductosAccessDetalle';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
 import Carrito from './pages/Carrito';
@@ -33,10 +35,12 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path='*' element={<Error404 />}/>
-                <Route path="/:perro" element={<Productos />} />
-                <Route path="/:gato" element={<ProductosGato />} />
-                <Route path="/:accesorios" element={<ProductosAccess />} />
-                <Route path="/:category/:id" element={<ProductosDetalle />} />
+                <Route path="/perro" element={<Productos />} />
+                <Route path="/gato" element={<ProductosGato />} />
+                <Route path="/accesorios" element={<ProductosAccess />} />
+                <Route path="/perro/:id" element={<ProductosDetalle />} />
+                <Route path="/gato/:id" element={<ProductosGatoDetalle />} />
+                <Route path="/accesorios/:id" element={<ProductosAccessDetalle />} />
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path='/faqs' element={<Faqs />} />
                 <Route path="/cart" element={<Carrito />} />
