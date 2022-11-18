@@ -233,7 +233,7 @@ const Checkout = () => {
                                 <div className="pagos d-flex justify-content-around">
                                     <Button onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
                                 </div>
-                                <form action="http://localhost:3001/checkout" method="POST">
+                                <form action="https://petclub-gab.herokuapp.com/checkout" method="POST">
                                     <input type="hidden" name="title" value={orderLista} />
                                     <input type="hidden" name="price" value={totalPrice()} />
                                     <Button type="submit" className="btnPagar" variant="contained" value="Pagar">Pagar con mercado pago</Button>
