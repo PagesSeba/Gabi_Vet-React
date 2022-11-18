@@ -28,6 +28,31 @@
 
   @media screen and (max-width:780px) {
     .cardM {
+      width: 170px;
+      height: 300px;
       transition: none;
+    }
+    h4 {
+      font-size:  calc(0.8rem + .3vw) !important;
+    }
+  }
+
+  
+  @media screen and (max-width:450px) {
+    .cardM {
+      width: 120px;
+      height: 200px;
+      transition: none;
+    }
+    h4 {
+      font-size:  calc(0.5rem + .3vw) !important;
+    }
+    .imagenesCard {
+      height: 110px;
+      margin-top: 5px;
+      object-fit: cover;
+    }
+    .textSm {
+      font-size: 0.575rem !important;
     }
   }

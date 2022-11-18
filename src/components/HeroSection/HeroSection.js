@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div class="hero">
   <div class="overlay"></div>
   <div class="content">
-    <h1>Bienvenidos a Hero Section</h1>
+    <h1>Bienvenidos a PetClub</h1>
     <p>Todo para tus mascotas</p>
     <Link to={"/perro"} className="linkNV"> <Button variant="contained" color="error">Ver Productos</Button> </Link>
   </div>

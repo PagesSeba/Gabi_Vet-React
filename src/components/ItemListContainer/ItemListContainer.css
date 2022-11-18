@@ -9,15 +9,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
+    gap: 20px;
   }
   .sombras {
       box-shadow: 1px 1px 5px grey;
       border-radius: 20px;
-  }
-  .cardM {
-    width: 300px;
-    height: 400px;
-    
   }
   .negro {
     color: black

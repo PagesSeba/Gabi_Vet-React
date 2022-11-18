@@ -68,7 +68,7 @@ function TrendingProducts() {
                         if (destacado) {
                             return (
                             
-                                <Link className='cardM linkNV negro' to={`./${id}`}>
+                                <Link className='cardM linkNV negro' to={`./perro/${id}`}>
                                 <div key={id} className="sombras" >
                                     <Item
                                         nombre={nombre}

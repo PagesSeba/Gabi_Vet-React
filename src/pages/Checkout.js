@@ -17,7 +17,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { Container } from "@mui/material";
 import { IconButton } from "@mui/material";
-import ResBack from "../components/ResBack";
 
 
 const Checkout = () => {

@@ -10,7 +10,7 @@ function Item(props) {
         <div className="sombras cardM">
             <img src={img} alt={img} className="imagenesCard"></img>
             <h4>{nombre}</h4>
-            <Button>Más Información</Button>
+            <Button className='textSm'>Más Información</Button>
         </div>
     )
 }
