@@ -34,12 +34,13 @@
   },
   "scripts": {
     "start": "node ./server/index.js",
+    "startR": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "watch": "npx nodemon server/index",
     "eject": "react-scripts eject",
     "back": "cd api && npm start",
-    "both": "concurrently \"npm run watch\" \"npm start\" "
+    "both": "concurrently \"npm run watch\" \"npm run startR\" "
   },
   "eslintConfig": {
     "extends": [

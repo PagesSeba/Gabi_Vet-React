@@ -231,14 +231,14 @@ const Checkout = () => {
                             <h3> Muchas gracias por su compra! Su orden se ha generado exitosamente</h3>
                             <p>Su numero de órden es: <span className="orderCode">{orderLista}</span></p>
                                 <div className="pagos d-flex justify-content-around">
-                                    <Button onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
-                                </div>
+                                    <Button className="btnEfectivo" onClick={handleClose} variant="contained" color="success">Efectivo (En Entrega)</Button>
                                 <form action="https://petclub-gab.herokuapp.com/checkout" method="POST">
                                     <input type="hidden" name="title" value={orderLista} />
                                     <input type="hidden" name="price" value={totalPrice()} />
                                     <Button type="submit" className="btnPagar" variant="contained" value="Pagar">Pagar con mercado pago</Button>
 
                                 </form>
+                                </div>
                             </div>
                         </form>)
 

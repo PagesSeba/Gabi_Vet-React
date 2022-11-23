@@ -72,8 +72,8 @@ const Carrito = () => {
                     <Container className="pTotal">
                         <h4>Total: ${totalPrice()}</h4>
                         <div className="btnCartWidget">
-                        <Button variant="contained" color="error" endIcon={<DeleteForeverIcon />} onClick={() => clearCart()}>Descartar Compra</Button>
-                        <Link to={"/checkout"} className="linkNV"><Button color="success" variant="contained" endIcon={<ShopIcon/>}>Finalizar Compra</Button></Link>
+                        <Button className="buttonCartDel" variant="contained" color="error" endIcon={<DeleteForeverIcon />} onClick={() => clearCart()}>Descartar Compra</Button>
+                        <Link to={"/checkout"} className="linkNV"><Button  className="buttonCartBuy" color="success" variant="contained" endIcon={<ShopIcon/>}>Finalizar Compra</Button></Link>
                         </div>
                     </Container>
 

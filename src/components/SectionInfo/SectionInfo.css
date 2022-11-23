@@ -1,5 +1,7 @@
 .containerSection {
     background-color: rgba(44,62,80,0.1);
+    /* background-image: url(https://img.freepik.com/foto-gratis/lindo-perrito-aislado-amarillo_23-2148985931.jpg?w=2000);
+    object-fit: cover; */
  }
  .containerCardS {
     gap: 5rem;

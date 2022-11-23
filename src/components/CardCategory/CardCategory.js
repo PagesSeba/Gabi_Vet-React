@@ -9,11 +9,11 @@ import "./CardCategory.css"
 const CardCategory = () => {
     return(
         <section className="containerGen container-fluid mt-5 p-2">
-            <h2 className="text-white">NUESTROS PRODUCTOS</h2>
+            <h2 className="text-white categoryText">NUESTROS PRODUCTOS</h2>
             <div className="containerCard">
                 <div className="cardC">
                         <div >
-                            <Link to={"/perro"} className="linkNV">
+                            <Link to={"/perro"} className="linkNV categoryText">
                                 <img src="./images/bulldog.png" alt="perro" className="cardImg"  />
                                 <h4 className="mt-2 hov">PERROS</h4>
                             </Link>
@@ -21,7 +21,7 @@ const CardCategory = () => {
                 </div>
                 <div className="cardC">
                         <div >
-                            <Link to={"/gato"} className="linkNV">
+                            <Link to={"/gato"} className="linkNV categoryText">
                                 <img src="./images/persian-cat.png" alt="gato" className="cardImg" ></img>
                             <h4 className=" mt-2 hov">GATOS</h4>
                             </Link>
@@ -29,7 +29,7 @@ const CardCategory = () => {
                 </div>
                 <div className="cardC">
                         <div>
-                            <Link to={"/accesorios"} className="linkNV">
+                            <Link to={"/accesorios"} className="linkNV categoryText">
                                 <img src="./images/collar.png" alt="accesorios" className="cardImg" ></img>
                                 <h4 className="mt-2 hov">ACCESORIOS</h4>
                             </Link>

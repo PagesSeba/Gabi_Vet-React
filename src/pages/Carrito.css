@@ -3,6 +3,14 @@
   max-width: 1000px;
   margin: auto;
 }
+.buttonCartDel {
+width: auto;
+font-size: unset;
+}
+.buttonCartBuy {
+  width: auto;
+  font-size: unset;
+}
 .child1 {
   width: auto;
   position: unset;
@@ -43,7 +51,6 @@
 
 .table tr {
   background-color: #f8f8f8;
-  border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -171,6 +178,14 @@
   .table td {
       text-align: center;
   }
+  .buttonCartDel {
+    width: 110px !important;
+    font-size: x-small !important;
+    }
+    .buttonCartBuy {
+      width: 110px !important;
+      font-size: x-small !important;
+    }
 }
 @media screen and (max-width: 375px) {
   .Carro {
@@ -248,4 +263,12 @@
       ;
       bottom: 10px;
     }
+    .buttonCartDel {
+      width: 110px !important;
+      font-size: x-small !important;
+      }
+      .buttonCartBuy {
+        width: 110px !important;
+        font-size: x-small !important;
+      }
  }
