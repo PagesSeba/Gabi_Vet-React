@@ -10,7 +10,7 @@ const HeroSection = () => {
   <div class="content">
     <h1>Bienvenidos a PetClub</h1>
     <p>Todo para tus mascotas</p>
-    <Link to={"/perro"} className="linkNV"> <Button variant="contained" color="error">Ver Productos</Button> </Link>
+    <a href="#categories" className="linkNV"> <Button variant="contained" color="error">Ver Productos</Button> </a>
   </div>
 </div>
 

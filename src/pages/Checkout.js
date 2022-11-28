@@ -20,20 +20,9 @@ import { IconButton } from "@mui/material";
 
 
 const Checkout = () => {
-    const form = useRef();
+    
+const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm("gmailMessage", "template_cba6d9n", form.current, "mCv1K4QfJ6UEr9SlF")
-      .then((result) => {
-          console.log(result.text);
-          alert("Mensaje Enviado con éxito!")
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset()
-  };
     const navigate = useNavigate()
     const { cartProducts, totalPrice, clearCart } = useContext(CartContext)
 
@@ -108,6 +97,22 @@ const Checkout = () => {
     
             setLoading(false)
 
+            emailjs.sendForm("gmailMessage", "template_owfwmgj", form.current, "coWj-nTAV7r_XBBk-")
+              .then((result) => {
+                  console.log(result.text);
+              }, (error) => {
+                  console.log(error.text);
+              });
+              e.target.reset()
+              
+              emailjs.sendForm("gmailMessage", "template_15p059q", form.current, "coWj-nTAV7r_XBBk-")
+                .then((result) => {
+                console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+                e.target.reset()
+
     }
     const [pagar, setpagar] = useState(true);
     const handleClose = () => {
@@ -127,16 +132,7 @@ const Checkout = () => {
         setpagar(false);
           };
 
-    //   const entrega = () => {
-    //     let value = document.getElementById([1])
-    //     let name = document.getElementsByName([1])
-    //     if (value.name == "deposito") {
-    //     document.getElementById("texto").innerHTML = "Deposito"
-    //     }
-    //     else {
-    //         document.getElementById("texto").innerHTML = "Entrega a domicilio"
-    //     }
-    //   }
+
     return (
             <div className="divGen">
         {
@@ -145,7 +141,7 @@ const Checkout = () => {
                         <div className="checkout">
                             <div className="formCompra">
                                 <h2>Finalizar Compra</h2>
-                                <form ref={form} id="form" className="formInt" onSubmit={formSubmit || sendEmail}>
+                                <form ref={form} id="form" className="formInt" onSubmit={formSubmit }>
                                     <input className="inputsCheckout" type="text" name="name" placeholder="Nombre Completo" onChange={dataUsuario} value={formData.name} required id="name" />
                                     <input className="inputsCheckout" type="number" name="phone" placeholder="Número de Telefono" onChange={dataUsuario} value={formData.phone} required id="phone" />
                                     <input className="inputsCheckout" type="mail" id="email" name="email" placeholder="Correo Electrónico" onChange={dataUsuario} value={formData.email} required />

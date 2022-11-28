@@ -8,7 +8,7 @@ import "./CardCategory.css"
 
 const CardCategory = () => {
     return(
-        <section className="containerGen container-fluid mt-5 p-2">
+        <section id="categories" className="containerGen container-fluid mt-5 p-2">
             <h2 className="text-white categoryText">NUESTROS PRODUCTOS</h2>
             <div className="containerCard">
                 <div className="cardC">

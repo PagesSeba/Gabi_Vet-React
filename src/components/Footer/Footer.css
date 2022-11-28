@@ -99,7 +99,12 @@
 
 .imgPayment {
     width: 45px;
-    height: 30px;
+    height: 37px;
+}
+.imgFoot {
+  width: 140px;
+  border-radius: 50%;
+ box-shadow: 1px 1px 11px black;;
 }
 
 *{
@@ -225,6 +230,9 @@ footer a {
   }
   .iSm {
     font-size: x-small;
+  }
+  .imgFoot {
+    width: 90px;
   }
 
 }

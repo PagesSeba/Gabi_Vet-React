@@ -1,11 +1,8 @@
-import Form from '../components/Form/Form'
-import WppWidget from '../components/WppWidget/WppWidget';
+
 import React, { useRef } from 'react';
 import emailjs from "emailjs-com"
-import { TextField, CircularProgress, Modal, Button, Box } from '@mui/material';
+import { TextField, Button } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
-import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
 import "./../components/Form/Form.css"
 
 
@@ -19,12 +16,10 @@ const Contacto = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("gmailMessage", "template_15p059q", form.current, "coWj-nTAV7r_XBBk-")
+    emailjs.sendForm("gmailMessage", "template_cra0uop", form.current, "mCv1K4QfJ6UEr9SlF")
       .then((result) => {
           console.log(result.text);
-          <Stack sx={{ width: '100%' }} spacing={2}>
-          <Alert severity="success">Mensaje Enviado Con Éxito!</Alert>
-        </Stack>
+          alert("Mensaje enviado con exito!")
       }, (error) => {
           console.log(error.text);
       });

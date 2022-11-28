@@ -2,11 +2,10 @@ import React from "react";
 import "./Footer.css"
 import logoVisa from "./visaLogo.jpg"
 import logoMaster from "./mastercard.jpg"
-import logoMercadoPago from "./mercadoPago.jpg"
+import logoAmerican from "./american.png"
 import { Link } from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
 import { IconButton } from "@mui/material";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -16,6 +15,9 @@ const Footer = () => {
     <section id="footer footerComponent">
         <div className="main-footer">
             <div className="logoinfo" data-aos="fade-up">
+            <div className="mb-3">
+                <img className="imgFoot" src="./logo.jpg"/>
+            </div>
             <div className="mb-2 d-flex flex-column">
                         <h3 className="textBlanco txtSm">Nuestras Redes</h3>
                         <div className="positionIconsGroup">
@@ -34,18 +36,14 @@ const Footer = () => {
                                     <FacebookIcon />
                                 </IconButton>
                             </a>
+                            <a href="mailto:petclubcba@gmail.com" target="_blank" className="linkNV">
+                                <IconButton className="tw iconsFooter">
+                                    <EmailIcon />
+                                </IconButton>
+                            </a>
                         </div>
                         </div>
 
-            <div className="contact-details">
-                <h3 className="textBlanco txtSm" >Contacto</h3>
-                <li className="d-flex justify-content-evenly align-items-start">
-                <IconButton> <PhoneIcon /> </IconButton><p className="iSm">+54 351 3 786521</p>
-                </li>
-                <li className="d-flex justify-content-evenly align-items-start">
-                <IconButton> <EmailIcon /> </IconButton><p className="iSm">rodisalinas12@gmail.com</p>
-                </li>
-                </div>
             </div>
         <div className="com ">
             <h3 className="textBlanco txtSm">Búsqueda</h3>
@@ -63,7 +61,7 @@ const Footer = () => {
                         <div className="positionPaymentImg logobox">
                             <img src={logoVisa} className="imgPayment" alt="visa"></img>
                             <img className="imgPayment" alt="mastercard" src={logoMaster}></img>
-                            <img className="imgPayment" alt="mercadopago" src={logoMercadoPago}></img>
+                            <img className="imgPayment" alt="mercadopago" src={logoAmerican}></img>
                         </div>
                     </div>
         </div>
